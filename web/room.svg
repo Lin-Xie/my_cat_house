@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 140" shape-rendering="crispEdges">
+<defs>
+<pattern id="wall" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#f9e8c9"/><path fill="#edd8b8" d="M2 5h1v1H2zm6 6h1v1H8z"/></pattern><pattern id="wood" width="55" height="12" patternUnits="userSpaceOnUse"><rect width="55" height="12" fill="#e9c297"/><path fill="#d2a97f" d="M0 0h55v1H0zm24 1h1v5h-1zM0 6h55v1H0zm50 1h1v5h-1z"/><path fill="#f5d8b0" d="M5 3h12v1H5zm24 6h9v1h-9z"/></pattern>
+<radialGradient id="lampHalo"><stop stop-color="#ffcc76" stop-opacity=".9"/><stop offset=".58" stop-color="#ffda94" stop-opacity=".48"/><stop offset="1" stop-color="#ffe5af" stop-opacity="0"/></radialGradient>
+<g id="shell"><rect width="256" height="95" fill="url(#wall)"/><path fill="#e8cbac" d="M0 0h256v4H0zM0 84h256v7H0z"/><path fill="#bd926d" d="M0 90h256v4H0z"/><path fill="url(#wood)" d="M0 94h256v46H0z"/>
+<path fill="#87947e" d="M16 12h92v60H16z"/><path fill="#88654c" d="M13 9h92v60H13z"/><path fill="#e2b880" d="M15 11h88v55H15z"/></g>
+<g id="furniture"><path fill="#d5aa77" d="M56 12h3v51h-3zM17 38h84v3H17z"/><path fill="#fff1cf" d="M11 8h15v14h-2v14h-3v11h2v15H11zM95 8h12v53H95V46h3V34h-2z"/><path fill="#b97f5f" d="M9 7h100v3H9zM11 44h11v3H11zm84 0h12v3H95z"/><path fill="#805c47" d="M8 64h103v5H8z"/><path fill="#edc18b" d="M8 63h103v2H8z"/>
+<path fill="#826549" d="M190 52h52v4h-52zm2 4h3v39h-3zm45 0h3v39h-3zm-44 22h46v3h-46z"/><path fill="#e2bc89" d="M189 51h54v2h-54z"/><path fill="#b76f52" d="M195 36h4v15h-4zm22 30h5v12h-5z"/><path fill="#739486" d="M200 32h5v19h-5zm4 34h6v12h-6z"/><path fill="#e7c894" d="M206 37h5v14h-5zm5 33h5v8h-5z"/>
+<path fill="#b7896b" d="M62 106h119v3h7v15h-7v4H62v-4h-7v-15h7z"/><path fill="#df9880" d="M62 104h119v3h7v15h-7v4H62v-4h-7v-15h7z"/><path fill="none" stroke="#ffdbb1" stroke-width="2" d="M66 108h111v3h5v8h-5v3H66v-3h-5v-8h5z"/><path fill="#ecc498" d="M110 115h4v-3h4v3h4v3h-4v3h-4v-3h-4z"/>
+<g aria-hidden="true"><path fill="#936e54" d="M157 89h28v3h-28zm3 3h3v7h-3zm19 0h3v7h-3z"/><path fill="#e8bd84" d="M156 88h30v2h-30z"/></g><g aria-label="蜜桃色帐篷猫窝"><path fill="#b58971" d="M5 97h2V82h3v-7h5v-4h21v3h5v6h4v17h2v6H5z"/><path fill="#e9ac93" d="M7 96V83h3v-7h6v-3h19v3h5v6h3v14z"/><path fill="#ffdec0" d="M12 79h4v-4h9v2h-7v3h-6zm20-5h3v3h-3z"/><path fill="#95766a" d="M12 97V87h3v-5h5v-3h11v3h5v5h3v10z"/><path fill="#b89078" d="M16 96V87h3v-4h13v3h4v10z"/><path fill="#c68c78" d="M4 94h42v8h-4v3H8v-3H4z"/><path fill="#f8caac" d="M6 95h38v4h-3v3H9v-3H6z"/><path fill="#fff0d4" d="M10 95h30v2H10z"/><path fill="#d98572" d="M28 75h2v1h2v-1h2v3h-2v2h-2v-2h-2z"/></g>
+<g aria-label="纸箱"><path fill="#946d48" d="M85 82h22v12H85z"/><path fill="#d5a56b" d="M86 84h20v9H86z"/><path fill="#6d523f" d="M86 80h19v4H86z"/><path fill="#e5bc84" d="M83 78h4l3 4h-5zm18 4l4-5h4l-4 7z"/></g>
+
+<!-- Woven curtain hems, a stitched rug and small details on the book spines. -->
+<g fill="#dec6a1"><path d="M13 11h2v32h-2zm5 0h2v22h-2zm82 0h2v31h-2zm4 0h1v26h-1zM13 48h2v13h-2zm90 1h2v12h-2z"/></g>
+<path fill="#d3a57e" d="M11 57h11v1H11zm85 0h11v1H96z"/>
+<path fill="#f3d39e" d="M196 39h2v1h-2zm5-4h3v1h-3zm0 12h3v1h-3zm7-7h3v1h-3zm5 29h3v1h-3z"/>
+<g fill="#b57865"><path d="M68 112h2v2h-2zm0 6h2v2h-2zm104-6h2v2h-2zm0 6h2v2h-2z"/></g>
+<g fill="#f5c29e"><path id="weave" d="M77 115h3v-2h2v-2h2v2h2v2h3v2h-3v2h-2v2h-2v-2h-2v-2h-3z"/><use href="#weave" x="73"/></g>
+<path fill="#cc9277" d="M82 115h2v2h-2zm73 0h2v2h-2z"/>
+<!-- Reading lamp -->
+<g><ellipse cx="175" cy="55" rx="31" ry="31" fill="url(#lampHalo)"/>
+<path fill="#b48261" d="M174 59h2v26h4v2h-11v-2h5z"/>
+<path fill="#ac7458" d="M170 47h9v2h2v5h2v6h2v2h-21v-2h2v-6h2v-5h2z"/>
+<path fill="#ffd992" d="M171 48h7v2h2v5h2v5h-15v-5h2v-5h2z"/>
+<path fill="#fff1bc" d="M172 50h2v9h-4v-5h2zM166 60h17v1h-17z"/>
+<path fill="#c59162" d="M181 62h1v5h-1z"/><rect x="180" y="67" width="3" height="2" fill="#dfac65"/></g>
+<path fill="#ffe5bf" d="M7 87h36v1H7zm41 0h19v1H48zm145 0h24v1h-24z"/>
+<g fill="#fce5c0"><path d="M53 109h5v1h-5zm-2 4h5v1h-5zm0 4h5v1h-5zm2 5h5v1h-5zm135-13h5v1h-5zm0 4h6v1h-6zm0 4h6v1h-6zm-1 5h6v1h-6z"/></g>
+<g fill="#fff3d6"><path d="M16 93h4v1h-4zm7-1h5v1h-5zm7 1h5v1h-5z"/></g>
+<g fill="#d29a80"><path d="M14 93h3v1h-3zm5-1h2v1h-2zm13 0h2v1h-2z"/></g>
+</g>
+</defs>
+<view id="day" viewBox="0 0 256 140"/>
+<g transform="translate(0)"><use href="#shell"/>
+<rect x="18" y="14" width="82" height="48" fill="#ade0e7"/><path fill="#dcf0dc" d="M18 41h82v21H18z"/>
+<path transform="translate(0 0)" fill="#fff2be" d="M76 20h8v2h2v7h-2v2h-8v-2h-2v-7h2z"/>
+<path fill="#fff4df" d="M23 25h5v-3h11v2h5v3H23zm33-7h8v2h4v2H53v-2h3z"/>
+<path fill="#a6cbb0" d="M18 52h7v-4h6v-4h7v-4h8v-4h8v4h6v4h8v4h6v-5h7v-5h8v-3h5v3h6v24H18z"/><path fill="#7fab94" d="M18 54h9v-3h13v3h9v3h13v-3h9v-4h11v-3h9v3h9v12H18z"/>
+<path fill="#fff2c9" opacity=".53" d="M19 95h29l14 8H32zm37 0h27l14 8H69zm-22 10h29l17 10H51zm35 0h29l17 10H86z"/>
+<use href="#furniture"/></g>
+<view id="dawn" viewBox="256 0 256 140"/>
+<g transform="translate(256)"><use href="#shell"/>
+<rect x="18" y="14" width="82" height="48" fill="#f6c9bc"/><path fill="#ffe4bd" d="M18 41h82v21H18z"/>
+<path transform="translate(-43 15)" fill="#fff2be" d="M76 20h8v2h2v7h-2v2h-8v-2h-2v-7h2z"/>
+<path fill="#fff4df" d="M23 25h5v-3h11v2h5v3H23zm33-7h8v2h4v2H53v-2h3z"/>
+<path fill="#c1baa4" d="M18 52h7v-4h6v-4h7v-4h8v-4h8v4h6v4h8v4h6v-5h7v-5h8v-3h5v3h6v24H18z"/><path fill="#a8ad91" d="M18 54h9v-3h13v3h9v3h13v-3h9v-4h11v-3h9v3h9v12H18z"/>
+<path fill="#fff2c9" opacity=".53" d="M19 95h29l14 8H32zm37 0h27l14 8H69zm-22 10h29l17 10H51zm35 0h29l17 10H86z"/>
+<use href="#furniture"/></g>
+<view id="dusk" viewBox="512 0 256 140"/>
+<g transform="translate(512)"><use href="#shell"/>
+<rect x="18" y="14" width="82" height="48" fill="#cfb7d4"/><path fill="#ffce9d" d="M18 41h82v21H18z"/>
+<path transform="translate(0 17)" fill="#fff2be" d="M76 20h8v2h2v7h-2v2h-8v-2h-2v-7h2z"/>
+<path fill="#fff4df" d="M23 25h5v-3h11v2h5v3H23zm33-7h8v2h4v2H53v-2h3z"/>
+<path fill="#c4a5ad" d="M18 52h7v-4h6v-4h7v-4h8v-4h8v4h6v4h8v4h6v-5h7v-5h8v-3h5v3h6v24H18z"/><path fill="#a1889d" d="M18 54h9v-3h13v3h9v3h13v-3h9v-4h11v-3h9v3h9v12H18z"/>
+<path fill="#49546a" d="M67 52h2v-2h4v2h2v4h-8zM81 54h3v-2h3v2h2v3h-8z"/><path fill="#ffe2a0" d="M69 53h2v2h-2zm15 2h2v1h-2z"/>
+<use href="#furniture"/></g>
+<view id="night" viewBox="768 0 256 140"/>
+<g transform="translate(768)"><use href="#shell"/>
+<rect x="18" y="14" width="82" height="48" fill="#364669"/><path fill="#647397" d="M18 41h82v21H18z"/>
+<path fill="#ffe9b4" d="M77 18h5v2h-3v5h2v2h5v2h-8v-2h-3v-6h2z"/><path fill="#ffecc4" d="M29 20h1v3h-1zm-1 1h3v1h-3zm16 10h2v1h-2zm20-13h1v2h-1zm26 16h2v1h-2zM36 37h1v1h-1z"/>
+<path fill="#596a86" d="M18 52h7v-4h6v-4h7v-4h8v-4h8v4h6v4h8v4h6v-5h7v-5h8v-3h5v3h6v24H18z"/><path fill="#465a72" d="M18 54h9v-3h13v3h9v3h13v-3h9v-4h11v-3h9v3h9v12H18z"/>
+<path fill="#49546a" d="M67 52h2v-2h4v2h2v4h-8zM81 54h3v-2h3v2h2v3h-8z"/><path fill="#ffe2a0" d="M69 53h2v2h-2zm15 2h2v1h-2z"/>
+<use href="#furniture"/></g>
+</svg>
