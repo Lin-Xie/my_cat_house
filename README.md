@@ -40,20 +40,3 @@ Windows 10 / 11 的 x64 电脑可以在 [Releases 下载页面](https://github.c
 | 启动时报错 | 查看弹窗提示；错误详情保存在 `%LOCALAPPDATA%\OrangeCatRoom\launcher.log`。 |
 | 模型连接失败 | 按设置页的提示核对 API 地址、模型名称、密钥和账户状态。 |
 
-## 开发与环境配置
-
-修改源码需要 Node.js 22 或更高版本，可从 [Node.js 官网](https://nodejs.org/zh-cn/download) 安装。在项目根目录运行 `node server.mjs`，再打开 <http://127.0.0.1:4317>。不需要 `npm install`；退出服务时按 Ctrl+C。
-
-重新生成 Windows EXE 需要官方 Node.js v24.16.0 Windows x64 运行时和 Windows 自带的 .NET Framework C# 编译器，具体步骤见 [Windows 构建说明](packaging/windows/README.md)。用户配置模型地址和密钥时直接使用小屋中的设置界面，不需要修改环境文件。
-
-## 仓库内容
-
-- `web/`、`server.mjs`：小屋界面、生活与记忆规则、本机服务，包含回访演示。
-- `packaging/windows/`、`scripts/`：EXE 启动器、构建配置、打包脚本及第三方许可。
-- `tests/`：成长与记忆逻辑测试、Windows EXE 验收，不随 EXE 分发。
-
-运行逻辑测试：`node --test tests/companion.test.mjs tests/life.test.mjs`。
-
-构建后运行 EXE 验收：`powershell -NoProfile -ExecutionPolicy Bypass -File tests/windows-package.ps1`。默认使用独立端口 14317；若被占用，可加 `-Port 14318`。这些测试不需要 Playwright。
-
-构建产物生成在 `dist/windows/`，通过 Releases 分发，不提交到 Git。`.build/` 是可删除的中间文件；本地文档、设计资料、视频和海报也不纳入仓库。
