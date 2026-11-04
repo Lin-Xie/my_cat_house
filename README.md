@@ -6,9 +6,9 @@
 
 ## 下载与打开
 
-Windows 10 / 11 的 x64 电脑可以在 [Releases 下载页面](https://github.com/Lin-Xie/my_cat_house/releases/latest) 的 **Assets（附件）** 中下载 `我的橘猫小屋.exe`。双击即可在默认浏览器中打开，不用安装 Node.js，也不会弹出终端窗口。
+Windows 10 / 11 的 x64 电脑可以在 [Releases 下载页面](https://github.com/Lin-Xie/my_cat_house/releases/latest) 的 **Assets（附件）** 中下载 `MyCatHouse-Windows-x64.exe`。双击即可在默认浏览器中打开，不用安装 Node.js，也不会弹出终端窗口。
 
-同一页面提供使用说明和 `SHA256SUMS.txt` 校验文件。只想使用小屋，下载 EXE 即可；`Source code` 是给开发者的源码包。
+同一页面提供 `Readme-Windows.txt` 使用说明和 `SHA256SUMS.txt` 校验文件。只想使用小屋，下载 EXE 即可；`Source code` 是给开发者的源码包。
 
 第一次打开要解包内置运行时，稍等片刻即可。可以把这个 EXE 放在桌面或其他方便找到的位置，不需要附带源码文件夹。
 
