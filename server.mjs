@@ -2,7 +2,10 @@ import { replay } from './web/life.mjs';
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 
-const origin = 'http://127.0.0.1:4317';
+// An isolated port is available for acceptance tests; normal use stays on 4317.
+const port = Number(process.env.ORANGE_CAT_ROOM_PORT || 4317);
+if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('无效的小屋端口。');
+const origin = 'http://127.0.0.1:' + port;
 const files = new Map([['/companion.mjs',['companion.mjs','text/javascript']],['/life.mjs',['life.mjs','text/javascript']],['/', ['index.html', 'text/html']], ['/app.js', ['app.js', 'text/javascript']], ['/style.css', ['style.css', 'text/css']], ['/room.svg', ['room.svg', 'image/svg+xml']]]);
 http.createServer(async (req, res) => {
   function json(status, data) {
@@ -14,6 +17,11 @@ http.createServer(async (req, res) => {
   res.setHeader('Content-Security-Policy',"default-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
   if (req.headers.host !== new URL(origin).host) return json(403,{error:'请使用本机小屋地址。'});
   try {
+    if (req.method === 'GET' && req.url === '/health') {
+      // Allow the local HTML entry to check readiness, without exposing user data.
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      return json(200, {app: 'orange-cat-room', version: 1});
+    }
     if (req.method === 'GET' && files.has(req.url)) {
       const [file,type] = files.get(req.url);
       const body = await readFile(new URL('./web/'+file, import.meta.url));
@@ -66,5 +74,5 @@ http.createServer(async (req, res) => {
     if (err.code === 'ERR_INVALID_URL' || err instanceof SyntaxError) return json(400,{error:'请求或模型地址格式无效，请重新保存配置。'});
     json(502,{error:'读取模型响应时连接失败，请检查网络、代理，以及接口地址是否发生跳转。'});
   }
-}).listen(4317,'127.0.0.1',()=>console.log('猫咪小屋  '+origin));
+}).listen(port,'127.0.0.1',()=>console.log('猫咪小屋  '+origin));
 

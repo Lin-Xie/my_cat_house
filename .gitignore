@@ -1,0 +1,14 @@
+.build/
+dist/
+
+# Local documents, presentation assets and submission references
+/文档/
+/作品海报模板.jpeg
+/作品提交与评分细则 - 2026软工实践周.pdf
+
+# Local dependencies, credentials and runtime logs
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
